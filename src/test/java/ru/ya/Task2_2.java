@@ -31,12 +31,12 @@ public class Task2_2 extends WebDriverSettings  {
         steps.clickInVideoCards(peremen);
         steps.clickInStringFind("GTX 1050ti",peremen);
         steps.clickInButtonFind(peremen);
-        steps.clickSorted(peremen);
+        steps.clickSorted(peremen);             // Сортируем результаты поиска
         steps.printFirstVideoCard(peremen);     //Получили самую низкую цену на видеокарту GTX 1050ti и печатаем в консоль
         Double FirstPrice1050Ti = peremen.getVideoCard1050();
         steps.clickInStringFind("RTX 3070",peremen);
         steps.clickInButtonFind(peremen);
-        steps.clickSorted(peremen);
+        steps.clickSorted(peremen);             // Сортируем результаты поиска
         steps.printFirstVideoCard2(peremen);    //Получили самую низкую цену на видеокарту RTX 3070 и печатаем в консоль
         Double FirstPrice3070 = peremen.getVideoCardRTX3070();
         Assertions.assertTrue(FirstPrice1050Ti < FirstPrice3070,"ВНИМАНИЕ!!! FirstPrice1050Ti дороже FirstPrice3070."); //Сравниваем найденые две цены и в случае неудачи - выводим в консоль сообщение!
