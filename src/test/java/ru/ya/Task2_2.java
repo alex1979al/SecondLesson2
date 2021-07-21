@@ -39,6 +39,7 @@ public class Task2_2 extends WebDriverSettings  {
         steps.clickSorted(peremen);             // Сортируем результаты поиска
         steps.printFirstVideoCard2(peremen);    //Получили самую низкую цену на видеокарту RTX 3070 и печатаем в консоль
         Double FirstPrice3070 = peremen.getVideoCardRTX3070();
+        System.out.println("Цена самой дешовой видеокарты RTX3070 равна " + FirstPrice3070 + " руб.");
         Assertions.assertTrue(FirstPrice1050Ti < FirstPrice3070,"ВНИМАНИЕ!!! FirstPrice1050Ti дороже FirstPrice3070."); //Сравниваем найденые две цены и в случае неудачи - выводим в консоль сообщение!
     }
 
