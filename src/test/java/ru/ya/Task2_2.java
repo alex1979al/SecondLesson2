@@ -42,6 +42,7 @@ public class Task2_2 extends WebDriverSettings  {
         System.out.println("Цена самой дешовой видеокарты RTX3070 равна " + FirstPrice3070 + " руб.");
         Assertions.assertTrue(FirstPrice1050Ti < FirstPrice3070,"ВНИМАНИЕ!!! FirstPrice1050Ti дороже FirstPrice3070."); //Сравниваем найденые две цены и в случае неудачи - выводим в консоль сообщение!
         System.out.println("Убедились, что цена на GTX 1050ti меньше цены на RTX 3070");
+        System.out.println("Ура!!! Тест завершен успешно!!!");
     }
 
 }
